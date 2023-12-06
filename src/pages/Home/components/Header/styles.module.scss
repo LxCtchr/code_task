@@ -1,0 +1,59 @@
+@media screen and (max-width: 566px) {
+  .kitten {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .logo {
+    align-items: center;
+  }
+}
+
+.container {
+  display: flex;
+  margin-left: 29px;
+  justify-content: space-between;
+  max-height: 185px;
+  margin-bottom: 21px;
+}
+
+.title {
+  margin-right: 10px;
+  color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 96px;
+  font-weight: 600;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  margin: 20px 0 0 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  max-height: 75px;
+  margin-top: 9px;
+
+  &>span {
+    font-size: 20px;
+    font-weight: 300;
+    justify-content: center;
+    color: #000;
+    line-height: normal;
+  }
+}
+
+.kitten {
+  margin-right: 8px;
+  height: 100%;
+  width: 207px;
+}

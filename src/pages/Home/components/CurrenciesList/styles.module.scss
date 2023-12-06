@@ -1,0 +1,43 @@
+.list {
+  z-index: 2;
+  max-height: 171px;
+  min-width: 181px;
+  position: absolute;
+  left: 0;
+  top: 48px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  border: 1px solid #DAD6D6;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    background-color: #FFF;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+  }
+}
+
+.item {
+  display: inline-block;
+  border-bottom: 1px solid #DAD6D6;
+  background-color: #FFF;
+  padding: 10px 0 10px 15px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+
+  &:last-child {
+    border: 0;
+  }
+
+  &:hover {
+    background: #F0EFEF;
+  }
+}
+
+.active {
+  background: #F0EFEF;
+}
