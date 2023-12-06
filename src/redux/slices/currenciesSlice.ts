@@ -5,14 +5,12 @@ type currencyState = {
   id: string;
   name: string;
   min_size: string;
-  isActive?: boolean;
 };
 
 const initialState: currencyState = {
   id: "RUB",
   name: "Russian Ruble",
   min_size: "0.01",
-  isActive: true,
 };
 
 export const currencySlice = createSlice({
@@ -23,9 +21,6 @@ export const currencySlice = createSlice({
       state.id = action.payload.id;
       state.name = action.payload.name;
       state.min_size = action.payload.min_size;
-    },
-    active(state, action: PayloadAction<boolean>) {
-      state.isActive = action.payload;
     },
   },
 });

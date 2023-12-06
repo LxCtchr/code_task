@@ -6,7 +6,7 @@ import { IProps } from "../../../../types/types";
 import styles from "./styles.module.scss";
 
 const CurrenciesList = ({ currencies }: IProps) => {
-  const { change, active } = currencySlice.actions;
+  const { change } = currencySlice.actions;
   const dispath = useAppDispatch();
   return (
     <div className={styles.list}>
@@ -17,7 +17,6 @@ const CurrenciesList = ({ currencies }: IProps) => {
             key={currency.id}
             onClick={() => {
               dispath(change(currency));
-              dispath(active(true));
             }}
           >
             {currency.id}
