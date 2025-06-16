@@ -1,18 +1,4 @@
-## Installation
-Install dependencies:
-```
-npm install
-```
-## Start : Development
-```
-npm start
-```
-## Build : Production
-Distribution files output will be generated in `dist/` directory by default.
-```
-npm run build
-```
-## Пункт №3 из ТЗ.
+## Описание.
 ### Хорошие практики написания кода:
 1. Старался писать код в соответствии с принципами: KISS, DRY, YAGNI.
 2. Старался избегать глубоких вложенностей код - декомпозировал на компоненты.
@@ -37,3 +23,18 @@ npm run build
 * около 2 дней
 ### Впечатления от задачи:
 * Прокачка скиллов всегда полезна и необходима. Впечатления положительные.
+
+* ## Установка
+Установите зависимости:
+```
+npm install
+```
+## Запуск в dev-режиме
+```
+npm start
+```
+## Билд в прод
+По умолчанию билд производится в папку `/dist`
+```
+npm run build
+```
